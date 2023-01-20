@@ -1,5 +1,8 @@
 -Crear un script de python en que hagas un POC sobre como usar los altavoces del computador
-para decir texto(Nava)
+para decir texto(Nava)(LISTO)
+	-Explorar configuraciones extra del engine(Nava)
+	-Humanizar la voz (otras librerias con una mejor sintesis de voz)
+	
 -Crear documento readme con estructura adecuada.(PENDIENTE)
 -Configurar/investigar seguridad github.(PENDIENTE)
 -Listar sobre posibles competencias(Nava y Christian)

@@ -1,7 +1,8 @@
 -Crear un script de python en que hagas un POC sobre como usar los altavoces del computador
 para decir texto(Nava)(LISTO)
-	-Explorar configuraciones extra del engine(Nava)
-	-Humanizar la voz (otras librerias con una mejor sintesis de voz)
+	-Explorar configuraciones extra del engine(Nava)(SEMI-LISTO)
+	-Opcional para rendimiento y configuraciones extra(PENDIENTE)
+	-Humanizar la voz (otras librerias con una mejor sintesis de voz)(IMPORTANTE)
 	
 -Crear documento readme con estructura adecuada.(PENDIENTE)
 -Configurar/investigar seguridad github.(PENDIENTE)
@@ -14,7 +15,10 @@ para decir texto(Nava)(LISTO)
 	-Sopesar si el funcionamiento con nombre personalizado es factible.
 -Crear un script que capture audio y lo transforme a texto(Christian)
 -Investigar si hay deteccion en vivo o toca grabar y transformar a texto de forma veloz
+	-Deteccion similitud palabras.
 	-De que duración minima se puede promediar para la palabra de activacion.(Christian)
+	-Ajustes de calibracion palabras (Detectar acentos)
+	-configurar idioma respuestas quemadas 
 -Lista o diccionario de frases:(Navales)
 	-Un saludo
 	-Una despedida

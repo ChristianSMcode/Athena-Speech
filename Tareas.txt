@@ -28,6 +28,12 @@ para decir texto(Nava)(LISTO)
 	-Una despedida
 	-etc...
 ============================================================================================
+-Esucha en segundo plano()
+-Entender funcionamiento listen_activate,puede ser calibrado?
+-Agregar configuracion de idioma
+===========================================================================================
+-Implementar escucha local con modelo de reconocimiento local sin conexion a internet(Necesario?)
+============================================================================================
 -Modelo de negocio, uso por usuario o como empresa.(Nava y Christian)
 -Pensar en caracteristicas claves y diferenciadoras.(Nava y Christian)
 -Tenemos que pensar en una estructura de fileSystem (Nava)(SEMILISTO)
@@ -36,7 +42,7 @@ para decir texto(Nava)(LISTO)
 -Arquitecture de startup en la nube: AWS
 =======================================PRINCIPAL=====================================================
 -Ir implementando los avances.
-
+*****************************************************************************************************
 NOTAS:
 Para que intelisense funcione hay que abrir vs code con el virtual environment ya activo.
 (code .)

@@ -1,5 +1,5 @@
 import utils.voice_synthesis as synth
-from utils.record_audio import record_audio_file
+from utils.voice_trigger import listen_activate,recognize_option
 from utils.words_manipulation import compare_words_simil
 import time
 
@@ -12,14 +12,11 @@ execution_mode=[
 ]
 
 def main():
-    record_audio_file('activacion.wav',5,1,44100)
-    respuesta='dkjfn nual athhena'
-    for word in respuesta.split(' '):
-        if compare_words_simil(word,'Athena') > 60:
+    while True:
+        print('Activalo')
+        if listen_activate('activate'):
             synth.generate_response_audio('En que modo deseas ejecutar')
-            time.sleep(2)
-            #Reconocimiento voz
-            mode='conversation'
+            mode=recognize_option(execution_mode)
             if mode == 'conversation':
                 synth.generate_response_audio('Escuchando en modo conversation, en que te puedo ayudar.')
             elif mode == 'media':
@@ -32,6 +29,7 @@ def main():
                 synth.generate_response_audio('Escuchando en modo fileSytem, en que te puedo ayudar.')
             else:
                 synth.generate_response_audio('Modo no disponible')
+
             
 
 if __name__ == '__main__':

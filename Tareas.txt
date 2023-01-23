@@ -3,17 +3,21 @@ para decir texto(Nava)(LISTO)
 	-Explorar configuraciones extra del engine(Nava)(SEMI-LISTO)
 	-Opcional para rendimiento y configuraciones extra(PENDIENTE)
 	-Humanizar la voz (otras librerias con una mejor sintesis de voz)(IMPORTANTE)
-	
+============================================================================================
 -Crear documento readme con estructura adecuada.(PENDIENTE)
 -Configurar/investigar seguridad github.(PENDIENTE)
 -Listar sobre posibles competencias(Nava y Christian)
 	-Explorar debilidades
 	-Fortalezas
 	-Caracteristicas
--Pendiente creacion de repositorio y estructuracion de github(Christian)
+============================================================================================
+-Pendiente creacion de repositorio y estructuracion de github(Christian)(LISTO)
+============================================================================================
 -Definir el nombre o la palabra de activacion(Nava)
 	-Sopesar si el funcionamiento con nombre personalizado es factible.
--Crear un script que capture audio y lo transforme a texto(Christian)
+============================================================================================
+-Crear un script que capture audio y lo transforme a texto(Christian)(ABORTADO)
+============================================================================================
 -Investigar si hay deteccion en vivo o toca grabar y transformar a texto de forma veloz
 	-Deteccion similitud palabras.
 	-De que duración minima se puede promediar para la palabra de activacion.(Christian)
@@ -23,6 +27,7 @@ para decir texto(Nava)(LISTO)
 	-Un saludo
 	-Una despedida
 	-etc...
+============================================================================================
 -Modelo de negocio, uso por usuario o como empresa.(Nava y Christian)
 -Pensar en caracteristicas claves y diferenciadoras.(Nava y Christian)
 -Tenemos que pensar en una estructura de fileSystem (Nava)(SEMILISTO)
@@ -31,5 +36,9 @@ para decir texto(Nava)(LISTO)
 -Arquitecture de startup en la nube: AWS
 =======================================PRINCIPAL=====================================================
 -Ir implementando los avances.
+
+NOTAS:
+Para que intelisense funcione hay que abrir vs code con el virtual environment ya activo.
+(code .)
 
 

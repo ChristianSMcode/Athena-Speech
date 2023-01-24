@@ -15,29 +15,31 @@ with open(f'metadata/languages/dictionary_{LANGUAGE}.json', encoding='utf-8') as
 
 def main():
     while True:
-        random_number=random.randint(0,2)
+        random_number_initialization=random.randint(0,2)
+        random_number_prompt=random.randint(0,1)
+        random_number_default=random.randint(0,1)
         print('Activalo')
         if listen_activate(configuration_json['activation_word'],LANGUAGE):
             
-            synth.generate_response_audio(configuration_json['prompts']['initialization'][random_number])
+            synth.generate_response_audio(configuration_json['prompts']['initialization'][random_number_initialization])
             mode=recognize_option(configuration_json['execution_mode'],LANGUAGE)
-
+        
             if mode == configuration_json['execution_mode'][0]:
-                synth.generate_response_audio('Escuchando en modo conversation.')
+                synth.generate_response_audio(configuration_json["prompts"]["mode_prompts"][random_number_prompt] + mode)
 
             elif mode == configuration_json['execution_mode'][1]:
-                synth.generate_response_audio('Modo no disponible')
+                synth.generate_response_audio(configuration_json["prompts"]["mode_prompts"][random_number_prompt] + mode)
 
             elif mode == configuration_json['execution_mode'][2]:
-                synth.generate_response_audio('Modo no disponible')
+                synth.generate_response_audio(configuration_json["prompts"]["mode_prompts"][random_number_prompt] + mode)
 
             elif mode == configuration_json['execution_mode'][3]:
-                synth.generate_response_audio('Modo no disponible')
+                synth.generate_response_audio(configuration_json["prompts"]["mode_prompts"][random_number_prompt] + mode)
 
             elif mode == configuration_json['execution_mode'][4]:
-                synth.generate_response_audio('Modo no disponible')
+                synth.generate_response_audio(configuration_json["prompts"]["mode_prompts"][random_number_prompt] + mode)
             else:
-                synth.generate_response_audio('No entendí, intenta denuveo')
+                synth.generate_response_audio(configuration_json["default_words"]["mode_not_found"][random_number_default])
 
             
 

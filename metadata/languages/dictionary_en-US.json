@@ -1,18 +1,27 @@
 {
-    "execution_mode":[
+    "execution_mode": [
         "conversation",
         "media",
         "command",
         "assistance",
         "files"
     ],
-
-    "activation_word":"activate",
-    "prompts":
-        {
-            "initialization":["In which mode do you want to execute.","Pick an execution mode.","Select a mode please."]
-        }
-    
-
-
+    "activation_word": "activate",
+    "prompts": {
+        "initialization": [
+            "In which mode do you want to execute.",
+            "Pick an execution mode.",
+            "Select a mode please."
+        ],
+        "mode_prompts": [
+            "Execution on mode: ",
+            "Running mode: "
+        ]
+    },
+    "default_words": {
+        "mode_not_found": [
+            "I don't understand.",
+            "That mode is not available."
+        ]
+    }
 }

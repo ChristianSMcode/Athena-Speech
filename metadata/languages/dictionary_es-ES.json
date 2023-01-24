@@ -1,16 +1,27 @@
 {
-    "execution_mode":[
+    "execution_mode": [
         "conversación",
         "multimedia",
         "comandos",
         "asistencia",
         "archivos"
     ],
-    "activation_word":"actívate",
-    "prompts":{
-            "initialization":["En que modo deseas ejecutar.","Escoge un modo de ejecución.","Selecciona un modo."]
-        }
-    
-
-
+    "activation_word": "actívate",
+    "prompts": {
+        "initialization": [
+            "En que modo deseas ejecutar.",
+            "Escoge un modo de ejecución.",
+            "Selecciona un modo."
+        ],
+        "mode_prompts": [
+            "Ejecutando en modo: ",
+            "Corriendo el modo: "
+        ]
+    },
+    "default_words": {
+        "mode_not_found": [
+            "No entendí que modo deseas usar.",
+            "El modo no está disponible."
+        ]
+    }
 }

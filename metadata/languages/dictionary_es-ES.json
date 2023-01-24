@@ -1,0 +1,16 @@
+{
+    "execution_mode":[
+        "conversación",
+        "multimedia",
+        "comandos",
+        "asistencia",
+        "archivos"
+    ],
+    "activation_word":"actívate",
+    "prompts":{
+            "initialization":["En que modo deseas ejecutar.","Escoge un modo de ejecución.","Selecciona un modo."]
+        }
+    
+
+
+}

@@ -5,7 +5,7 @@ def listen_activate(trigger_word):
     with sr.Microphone() as source:
         audio= r.listen(source)
     try:
-        text = r.recognize_google(audio,language="en-US")
+        text = r.recognize_google(audio,language="es-ES")
         if trigger_word in text.lower():
             return True
     except:
@@ -16,7 +16,7 @@ def recognize_option(opts):
     with sr.Microphone() as source:
         audio= r.listen(source)
     try:
-        text = r.recognize_google(audio,language="en-US")
+        text = r.recognize_google(audio,language="es-ES")
         for word in opts:
             if word in text.lower():
                 return word
